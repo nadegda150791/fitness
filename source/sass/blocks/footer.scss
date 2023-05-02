@@ -1,0 +1,24 @@
+.footer {
+  padding: 41px 103px 35px;
+  background-color: $color-black-russian;
+  color: $color-default-white;
+
+  @media screen and (max-width: 1199px) {
+    padding: 43px 39px 44px 45px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 15px 52px;
+  }
+}
+
+.footer__wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}

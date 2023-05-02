@@ -1,0 +1,168 @@
+.form {
+  margin: 0;
+  padding: 56px 170px 64px 103px;
+  background-color: $color-sapphire;
+  color: $color-default-white;
+
+  @media screen and (max-width: 1315px) {
+    padding: 56px 150px 64px 90px;
+  }
+
+  @media screen and (max-width: 1253px) {
+    padding: 56px 130px 64px 70px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 61px 163px 68px 133px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 65px 15px 69px;
+  }
+}
+
+.form__title {
+  margin: 0 0 18px;
+  padding: 0;
+  font-family: $ff-alumni-sans;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 33px;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 34px;
+  }
+}
+
+.form__container {
+  min-width: 410px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media screen and (max-width: 1199px) {
+    gap: 32px 60px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.form__custom-input input {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 5px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  color: $color-default-white;
+  background-color: $color-sapphire;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 33px;
+  }
+
+  @media screen and (max-width: 446px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 85%;
+  }
+
+  @media screen and (max-width: 370px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 70%;
+  }
+}
+
+.form__toggle {
+  margin: -2px;
+  padding: 17px;
+  grid-column: 1/3;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  background-color: $color-sapphire;
+  border: 3px solid $color-default-white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 6px;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 85%;
+  }
+
+  @media screen and (max-width: 370px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 446px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 85%;
+  }
+
+  @media screen and (max-width: 370px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 71%;
+  }
+}

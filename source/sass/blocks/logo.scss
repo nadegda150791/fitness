@@ -1,0 +1,28 @@
+.logo__link {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__img {
+  margin-top: 10px;
+
+  @media screen and (max-width: 1199px) {
+    width: 82px;
+    height: 18px;
+    margin-top: 4px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 68px;
+    height: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}

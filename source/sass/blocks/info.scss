@@ -1,0 +1,9 @@
+.info {
+  display: flex;
+  max-width: 1366px;
+  margin: auto;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
+}

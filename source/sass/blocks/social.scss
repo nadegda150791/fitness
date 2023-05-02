@@ -1,0 +1,32 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 17px;
+  }
+}
+
+.social__item {
+  list-style-type: none;
+  margin-right: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
