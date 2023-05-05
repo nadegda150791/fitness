@@ -1,0 +1,245 @@
+.stocks {
+  padding: 100px 103px 60px;
+  max-width: 1366px;
+  margin: auto;
+
+  @media screen and (max-width: 1199px) {
+    padding: 82px 45px 35px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 63px 15px 24px;
+  }
+}
+
+.stocks__title {
+  margin: 0 0 33px 2px;
+  padding: 0;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $color-sapphire;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 10px 42px 0;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 6px 43px 0;
+  }
+}
+
+.stocks__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.stocks__wrapper-first {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    margin: auto auto 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.stocks__wrapper-index {
+  max-height: 462px;
+  padding: 45px;
+  color: $color-default-white;
+  background-color: $color-torch-red;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 43px;
+  }
+}
+
+.stocks__wrapper-index p {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 23px;
+}
+
+.stocks__wrapper-index time {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.stocks__wrapper-next p {
+  margin: 13px 0 184px;
+  padding: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  @media screen and (max-width: 767px) {
+    margin: 8px 0 26px;
+  }
+}
+
+.stocks__link {
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.stocks__img {
+  object-fit: cover;
+  height: 462px;
+
+  @media screen and (max-width: 1199px) {
+    min-width: 399px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 299px;
+    min-width: 100%;
+  }
+}
+
+.stocks__list {
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.stocks__item {
+  margin: 0 0 37px;
+  padding: 7px;
+  list-style-type: none;
+  background: linear-gradient(160.05deg,#ed0233 8.6%,#003eb7 97.31%);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.stocks__wrapper-second {
+  padding: 30px 28px 27px;
+  color: $color-resolution-blue;
+  background-color: $color-default-white;
+
+  @media screen and (max-width: 1199px) {
+    position: relative;
+    min-height: 197px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 28px 30px;
+  }
+}
+
+.stocks__heading {
+  margin: 0 0 15px 1px;
+  padding: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 15px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 0 17px 0;
+  }
+}
+
+.stocks__wrapper-second p {
+  margin: 0 0 66px;
+  padding: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.stocks__link-next {
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-resolution-blue;
+  border-bottom: 1px solid $color-resolution-blue;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    bottom: 29px;
+    left: 28px;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,137 @@
+.season-tickets {
+  position: relative;
+  padding: 120px 103px;
+  background: $color-ghost-white;
+
+  @media screen and (max-width: 1256px) {
+    padding: 120px 70px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 99px 163px 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 64px 17px 34px 15px;
+  }
+}
+
+.season-tickets::after {
+  position: absolute;
+  content: "";
+  width: 344px;
+  height: 2px;
+  top: 242px;
+  background: rgba(120, 120, 120, 0.2);
+
+  @media screen and (max-width: 2200px) {
+    left: 41%;
+  }
+
+  @media screen and (max-width: 1650px) {
+    left: 40%;
+  }
+
+  @media screen and (max-width: 1450px) {
+    left: 38%;
+  }
+
+  @media screen and (max-width: 1366px) {
+    left: 37%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 331px;
+    height: 2px;
+    top: 207px;
+    left: 36%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    left: 34%;
+  }
+
+  @media screen and (max-width: 900px) {
+    left: 32%;
+  }
+
+  @media screen and (max-width: 800px) {
+    left: 30%;
+  }
+
+  @media screen and (max-width: 768px) {
+    left: 28.5%;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: 159px;
+    width: 290px;
+  }
+
+  @media screen and (max-width: 600px) {
+    left: 25%;
+  }
+
+  @media screen and (max-width: 530px) {
+    left: 23%;
+  }
+
+  @media screen and (max-width: 440px) {
+    left: 17%;
+  }
+
+  @media screen and (max-width: 390px){
+    left: 13%;
+  }
+
+  @media screen and (max-width: 340px){
+    left: 8%;
+  }
+
+  @media screen and (max-width: 320px){
+    left: 5.5%;
+  }
+}
+
+.season-tickets__wrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.season-tickets__title {
+  margin: 0 5px 15px 0;
+  padding: 0;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 14px 19px 0;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 11px 20px 0;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.season-tickets__img {
+  position: absolute;
+  bottom: -149px;
+  right: 0;
+
+  @media screen and (max-width: 1199px) {
+    bottom: -103px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

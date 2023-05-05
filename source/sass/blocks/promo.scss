@@ -10,7 +10,7 @@
   }
 
   @media screen and (max-width: 1199px) {
-    padding: 100px 45px 90px;
+    padding: 60px 45px 90px;
   }
 
   @media screen and (max-width: 767px)  {
@@ -176,6 +176,15 @@
   text-transform: uppercase;
   color: $color-default-white;
   border: 4px solid $color-default-white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media screen and (max-width: 1199px) {
     padding: 11px;

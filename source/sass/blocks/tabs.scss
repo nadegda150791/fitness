@@ -1,0 +1,245 @@
+.tabs {
+  max-width: 100%;
+}
+
+.tabs__controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 341px;
+  background: none;
+  margin: auto auto 40px;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    max-width: 331px;
+    margin-bottom: 44px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 290px;
+    margin-bottom: 35px;
+  }
+}
+
+.tabs__control {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  align-items: center;
+  color: rgba(16, 38, 84, 0.5);
+  margin: 0;
+  padding: 0 0 12px;
+  background: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 1199px) {
+   font-size: 18px;
+  }
+
+  @media screen and (max-width: 767px) {
+   font-size: 16px;
+  }
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+    color: $color-sapphire;
+    border-bottom:  2px solid $color-crimson;
+  }
+}
+
+.tabs__content {
+  height: 401px;
+}
+
+.tabs__element {
+  width: 100%;
+}
+
+.tabs__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 40px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tabs__item {
+  position: relative;
+  list-style-type: none;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 35px;
+  }
+}
+
+.tabs__wrapper {
+  margin: 0;
+  padding: 7px;
+  color: $color-sapphire;
+  background-color: $color-default-white;
+  cursor: pointer;
+}
+
+.tabs__wrapper-index {
+  padding: 49px 70px 62px;
+  color: $color-sapphire;
+  background-color: $color-default-white;
+  cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    padding: 50px 70px 59px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 44px 14px 46px;
+  }
+}
+
+.tabs__title {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 4px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+    line-height: 110.16%;
+    margin-bottom: 9px;
+  }
+}
+
+.tabs__price {
+  position: relative;
+  z-index: 10;
+}
+
+.tabs__price p {
+  margin: 0 0 64px;
+  padding: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  align-items: center;
+  color: $color-chambray;
+
+  @media screen and (max-width: 767px){
+    margin-bottom: 54px;
+  }
+}
+
+.tabs__price time {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  align-items: center;
+  color: $color-egyptian-blue;
+
+  @media screen and (max-width: 767px) {
+    font-size: 48px;
+    margin-right: -6px;
+  }
+}
+
+.tabs__number span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 31%;
+  left: 0;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  color: $color-whisper;
+  opacity: 0.47;
+
+  @media screen and (max-width: 767px) {
+    font-size: 80px;
+  }
+}
+
+.tabs__toggle {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  margin: 36px 0 0;
+  padding: 23px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-sapphire;
+  border: 2px solid $color-resolution-blue;
+  background-color: $color-default-white;
+  z-index: 20px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin: auto;
+    padding: 25px;
+    margin-top: 34px;
+    max-width: 206px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 29px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tabs__icon {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.tabs__item:hover .tabs__toggle {
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: $color-default-white;
+}
+
+.tabs__item:hover .tabs__wrapper {
+  background: linear-gradient(130.05deg,#ed0233 8.6%,#003eb7 97.31%);
+}

@@ -62,6 +62,10 @@
   }
 }
 
+.form__custom-input {
+  position: relative;
+}
+
 .form__custom-input input {
   width: 100%;
   margin: 0;
@@ -166,3 +170,26 @@
     width: 71%;
   }
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px $color-sapphire;
+  -webkit-text-fill-color: $color-default-white;
+  border-bottom: 1px solid $color-light-slate-grey;
+}
+
+.form__custom-input .is-invalid,
+.form__custom-input .is-valid {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1px;
+  color: $color-torch-red;
+}
+
+.form__custom-input .is-valid {
+  color: $color-default-white;
+}
+
