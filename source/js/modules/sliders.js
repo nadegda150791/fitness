@@ -1,5 +1,3 @@
-// import Swiper from '../vendor/swiper';
-
 const sliders = [
   {
     container: document.querySelector('.coaches__swiper'),
