@@ -19,4 +19,7 @@
   <symbol viewBox="0 0 13 15" id="button">
     <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white"/>
   </symbol>
+  <symbol viewBox="0 0 18 34" id="arrow">
+    <path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
+  </symbol>
 </svg>

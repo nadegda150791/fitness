@@ -1,5 +1,9 @@
 .menu {
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 422px;
+  }
 }
 
 .menu__list {

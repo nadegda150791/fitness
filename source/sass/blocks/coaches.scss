@@ -1,21 +1,28 @@
 .coaches {
   max-width: 1366px;
   margin: auto;
-  // padding: 16px 103px 140px 103px;
   padding: 16px 0 140px;
 
   @media screen and (max-width: 1199px) {
-    padding: 10px 101px 100px;
+    padding: 10px 0 100px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 3px 47px 70px;
+    padding: 3px 0 70px;
   }
 }
 
 .coaches__wrapper {
   position: relative;
   padding: 0 103px;
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 101px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 47px;
+  }
 }
 
 .coaches__title {
@@ -68,7 +75,7 @@
   object-fit: cover;
   width: 260px;
   height: 294px;
-  box-shadow: 0px 0px 35px rgba(42, 59, 99, 0.17);
+  box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
 
   @media screen and (max-width: 1199px) {
     width: 268px;
@@ -123,8 +130,14 @@
   z-index: 1;
   opacity: 0;
   pointer-events: none;
+  overflow-y: scroll;
+
+  @media screen and (max-width: 1199px) {
+    width: 260px;
+  }
 
   @media screen and (max-width: 767px) {
+    width: 226px;
     padding: 65px 33px 48px 50px;
   }
 }
@@ -219,6 +232,7 @@
   left: -16px;
   background-color: $color-default-white;
   border-radius: 50%;
+  z-index: 10;
 }
 
 .coaches__wrapper-next {

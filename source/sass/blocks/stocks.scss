@@ -62,7 +62,7 @@
 }
 
 .stocks__wrapper-index {
-  max-height: 462px;
+  // max-height: 462px;
   padding: 45px;
   color: $color-default-white;
   background-color: $color-torch-red;
@@ -83,7 +83,7 @@
   line-height: 23px;
 }
 
-.stocks__wrapper-index time {
+.stocks__wrapper-index span {
   margin: 0;
   padding: 0;
   font-family: $ff-roboto-condensed;
@@ -160,7 +160,11 @@
   margin: 0 0 37px;
   padding: 7px;
   list-style-type: none;
-  background: linear-gradient(160.05deg,#ed0233 8.6%,#003eb7 97.31%);
+  background: linear-gradient(160.05deg, #ed0233 8.6%, #003eb7 97.31%);
+
+  &:last-child {
+    margin: 0;
+  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;

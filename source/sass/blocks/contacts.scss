@@ -48,7 +48,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-  display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 19px 115px;
@@ -152,7 +151,6 @@
     font-size: 18px;
     line-height: 152.34%;
     letter-spacing: 0.01em;
-
   }
 }
 

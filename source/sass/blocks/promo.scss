@@ -1,19 +1,23 @@
 .promo {
   padding: 120px 103px 90px;
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1360px) {
     padding: 120px 80px 90px;
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1335px) {
     padding: 120px 45px 90px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    padding: 120px 10px 90px;
   }
 
   @media screen and (max-width: 1199px) {
     padding: 60px 45px 90px;
   }
 
-  @media screen and (max-width: 767px)  {
+  @media screen and (max-width: 767px) {
     padding: 70px 15px 60px;
   }
 }
@@ -43,7 +47,7 @@
     padding: 46px 45px 49px;
   }
 
-  @media screen and (max-width: 767px)  {
+  @media screen and (max-width: 767px) {
     padding: 47px 44px 52px;
   }
 }
@@ -68,7 +72,7 @@
     font-size: 48px;
   }
 
-  @media screen and (max-width: 767px)  {
+  @media screen and (max-width: 767px) {
     margin-top: 3px;
   }
 }
