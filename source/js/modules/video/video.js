@@ -1,6 +1,5 @@
 const initVideo = () => {
   const video = document.querySelectorAll('.gym__video-wrapper');
-  const iframe = document.querySelectorAll('.gym__video');
 
   if (video && video.length) {
     video.forEach((block) => {
@@ -9,8 +8,8 @@ const initVideo = () => {
       const iframeBlock = block.querySelector('.gym__video');
 
       videoButton.addEventListener('click', () => {
-        iframeBlock.append(iframe);
         videoCover.classList.add('hidden');
+        iframeBlock[0].src += '&autoplay=1';
       });
     });
   }

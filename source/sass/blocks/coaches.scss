@@ -1,5 +1,8 @@
 .coaches {
-  padding: 16px 103px 140px 103px;
+  max-width: 1366px;
+  margin: auto;
+  // padding: 16px 103px 140px 103px;
+  padding: 16px 0 140px;
 
   @media screen and (max-width: 1199px) {
     padding: 10px 101px 100px;
@@ -11,8 +14,8 @@
 }
 
 .coaches__wrapper {
-  max-width: 1160px;
-  margin: auto;
+  position: relative;
+  padding: 0 103px;
 }
 
 .coaches__title {
@@ -46,7 +49,6 @@
   position: relative;
   list-style-type: none;
   background: $color-sapphire;
-  // padding-top: calc(260 * 100% / 294);
   color: $color-default-white;
 
   @media screen and (max-width: 1199px) {
@@ -63,13 +65,7 @@
 }
 
 .coaches__img {
-  // display: block;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
   object-fit: cover;
-  // height: 100%;
-  // width: 100%;
   width: 260px;
   height: 294px;
   box-shadow: 0px 0px 35px rgba(42, 59, 99, 0.17);
@@ -225,3 +221,43 @@
   border-radius: 50%;
 }
 
+.coaches__wrapper-next {
+  position: absolute;
+  z-index: 0;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.coaches__button {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  width: 20px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.coaches__button--next {
+  right: 45px;
+  transform: rotate(180deg);
+}
+
+.coaches__button--prev {
+  left: 45px;
+}
