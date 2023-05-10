@@ -8,8 +8,8 @@ const initVideo = () => {
       const iframeBlock = block.querySelector('.gym__video');
 
       videoButton.addEventListener('click', () => {
+        iframeBlock.src = `${iframeBlock.src}?autoplay=1`;
         videoCover.classList.add('hidden');
-        iframeBlock[0].src += '&autoplay=1';
       });
     });
   }
