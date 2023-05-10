@@ -3053,7 +3053,7 @@ input:-webkit-autofill {
 }
 @media screen and (max-width: 767px) {
   .gym {
-    padding: 0;
+    padding: 0 0 71px 0;
   }
 }
 
@@ -3186,48 +3186,57 @@ input:-webkit-autofill {
 
 .gym__video-wrapper {
   position: relative;
+  margin: -113px 0 0 -63px;
+}
+@media screen and (max-width: 1199px) {
+  .gym__video-wrapper {
+    width: 266px;
+    height: 167px;
+    margin: -84px auto auto auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gym__video-wrapper {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .gym__video-img {
   position: absolute;
-  top: -113px;
-  left: -63px;
+  top: 0;
+  left: 0;
   z-index: 2;
-}
-@media screen and (max-width: 1199px) {
-  .gym__video-img {
-    top: -84px;
-    left: 40.5%;
-    width: 266px;
-    height: 167px;
-  }
-}
-@media screen and (max-width: 890px) {
-  .gym__video-img {
-    left: 33%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .gym__video-img {
-    left: 30.5%;
-  }
 }
 @media screen and (max-width: 767px) {
   .gym__video-img {
     width: 100%;
-    margin-bottom: 63px;
-    left: 0;
-    top: -237px;
+    height: 167px;
   }
 }
 
 .gym__video-cover {
   position: relative;
-  width: 660px;
+  width: 364px;
   height: 228px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .gym__video-cover.hidden {
   display: none;
+}
+@media screen and (max-width: 1199px) {
+  .gym__video-cover {
+    width: 266px;
+    height: 167px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gym__video-cover {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .gym__video-cover::before {
@@ -3235,53 +3244,48 @@ input:-webkit-autofill {
   content: "";
   width: 364px;
   height: 228px;
-  top: -113px;
-  left: -63px;
+  top: 0;
+  left: 0;
   display: block;
-  z-index: 100;
+  z-index: 3;
   background-color: #14367a;
   opacity: 0.5;
+}
+@media screen and (max-width: 1199px) {
+  .gym__video-cover::before {
+    width: 266px;
+    height: 167px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gym__video-cover::before {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .gym__video {
   position: absolute;
-  top: -113px;
-  left: -63px;
+  top: 0;
+  left: 0;
   border: none;
   z-index: 1;
 }
 @media screen and (max-width: 1199px) {
   .gym__video {
-    top: -84px;
-    left: 40.5%;
     width: 266px;
     height: 167px;
   }
 }
-@media screen and (max-width: 890px) {
-  .gym__video {
-    left: 33%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .gym__video {
-    left: 30.5%;
-  }
-}
 @media screen and (max-width: 767px) {
   .gym__video {
-    position: relative;
     width: 100%;
-    margin-bottom: 63px;
-    left: 0;
-    top: 0;
   }
 }
 
 .gym__video-button {
-  position: absolute;
-  top: -34px;
-  left: 84px;
+  position: relative;
+  margin: auto;
   border: none;
   z-index: 10;
   width: 72px;
@@ -3313,33 +3317,16 @@ input:-webkit-autofill {
   .gym__video-button {
     width: 52px;
     height: 52px;
-    top: -27px;
-    left: 51%;
   }
-}
-@media screen and (max-width: 1199px) and (max-width: 890px) {
-  .gym__video-button {
-    left: 46%;
-  }
-}
-@media screen and (max-width: 1199px) {
   .gym__video-button svg {
     width: 12px;
     height: 12px;
   }
-}
-@media screen and (max-width: 1199px) {
   .gym__video-button::after {
     width: 73px;
     height: 73px;
     top: -11px;
     left: -11px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .gym__video-button {
-    top: -180px;
-    left: 42%;
   }
 }
 
@@ -4154,7 +4141,7 @@ input:-webkit-autofill {
 }
 @media screen and (max-width: 767px) {
   .coaches__item {
-    margin: 0;
+    margin: 0 30px 0 0;
     width: 226px;
     height: 274px;
   }

@@ -6,7 +6,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding: 0;
+    padding: 0 0 71px 0;
   }
 }
 
@@ -122,44 +122,66 @@
 
 .gym__video-wrapper {
   position: relative;
-}
-
-.gym__video-img {
-  position: absolute;
-  top: -113px;
-  left: -63px;
-  z-index: 2;
+  margin: -113px 0 0 -63px;
 
   @media screen and (max-width: 1199px) {
-    top: -84px;
-    left: 40.5%;
     width: 266px;
     height: 167px;
-  }
-
-  @media screen and (max-width: 890px) {
-    left: 33%;
-  }
-
-  @media screen and (max-width: 768px) {
-    left: 30.5%;
+    margin: -84px auto auto auto;
   }
 
   @media screen and (max-width: 767px) {
     width: 100%;
-    margin-bottom: 63px;
-    left: 0;
-    top: -237px;
+    margin-top: 0;
+  }
+}
+
+.gym__video-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  // @media screen and (max-width: 1199px) {
+  //   width: 266px;
+  //   height: 167px;
+  // }
+
+  // @media screen and (max-width: 890px) {
+  //   left: 33%;
+  // }
+
+  // @media screen and (max-width: 768px) {
+  //   left: 30.5%;
+  // }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 167px;
+    // margin-bottom: 63px;
+    // left: 0;
+    // top: -237px;
   }
 }
 
 .gym__video-cover {
   position: relative;
-  width: 660px;
+  width: 364px;
   height: 228px;
+  display: flex;
 
   &.hidden {
     display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 266px;
+    height: 167px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -168,49 +190,56 @@
   content: "";
   width: 364px;
   height: 228px;
-  top: -113px;
-  left: -63px;
+  top: 0;
+  left: 0;
   display: block;
-  z-index: 100;
+  z-index: 3;
   background-color: #14367a;
   opacity: 0.5;
-}
-
-.gym__video {
-  position: absolute;
-  top: -113px;
-  left: -63px;
-  border: none;
-  z-index: 1;
 
   @media screen and (max-width: 1199px) {
-    top: -84px;
-    left: 40.5%;
     width: 266px;
     height: 167px;
   }
 
-  @media screen and (max-width: 890px) {
-    left: 33%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  z-index: 1;
+
+  @media screen and (max-width: 1199px) {
+    width: 266px;
+    height: 167px;
   }
 
-  @media screen and (max-width: 768px) {
-    left: 30.5%;
-  }
+  // @media screen and (max-width: 890px) {
+  //   left: 33%;
+  // }
+
+  // @media screen and (max-width: 768px) {
+  //   left: 30.5%;
+  // }
 
   @media screen and (max-width: 767px) {
-    position: relative;
+    // position: relative;
     width: 100%;
-    margin-bottom: 63px;
-    left: 0;
-    top: 0;
+    // margin-bottom: 63px;
+    // left: 0;
+    // top: 0;
   }
 }
 
 .gym__video-button {
-  position: absolute;
-  top: -34px;
-  left: 84px;
+  position: relative;
+  margin: auto;
   border: none;
   z-index: 10;
   width: 72px;
@@ -239,12 +268,10 @@
   @media screen and (max-width: 1199px) {
     width: 52px;
     height: 52px;
-    top: -27px;
-    left: 51%;
 
-    @media screen and (max-width: 890px) {
-      left: 46%;
-    }
+    // @media screen and (max-width: 890px) {
+    //   left: 46%;
+    // }
 
     svg {
       width: 12px;
@@ -259,8 +286,8 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
-    top: -180px;
-    left: 42%;
-  }
+  // @media screen and (max-width: 767px) {
+  //   top: -180px;
+  //   left: 42%;
+  // }
 }
