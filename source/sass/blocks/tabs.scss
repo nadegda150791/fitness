@@ -82,33 +82,21 @@
   position: relative;
   list-style-type: none;
   margin: 0;
-  padding: 7px;
+  max-width: 360px;
+  padding: 49px 70px 62px;
   color: $color-sapphire;
   background-color: $color-default-white;
+  border: 7px solid $color-default-white;
   cursor: pointer;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 40px;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 35px;
-  }
-}
-
-.tabs__wrapper-index {
-  padding: 49px 70px 62px;
-  max-width: 360px;
-  color: $color-sapphire;
-  background-color: $color-default-white;
-  cursor: pointer;
-
-  @media screen and (max-width: 1199px) {
     padding: 50px 70px 59px;
     max-width: 100%;
   }
 
   @media screen and (max-width: 767px) {
+    margin-bottom: 35px;
     padding: 44px 14px 46px;
   }
 }
@@ -239,6 +227,7 @@
   color: $color-default-white;
 }
 
-.tabs__item:hover {
-  background: linear-gradient(130.05deg, #ed0233 8.6%, #003eb7 97.31%);
+.tabs__item:hover,
+.tabs__item:focus-within {
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
 }
