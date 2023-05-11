@@ -50,8 +50,8 @@
 }
 
 .coaches__item {
-  width: 260px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   margin: 0 40px 0 0;
   position: relative;
   list-style-type: none;
@@ -60,32 +60,18 @@
 
   @media screen and (max-width: 1199px) {
     margin: 0 30px 0 0;
-    width: 268px;
-    height: 294px;
   }
 
   @media screen and (max-width: 767px) {
     margin: 0 30px 0 0;
-    width: 226px;
-    height: 274px;
   }
 }
 
 .coaches__img {
   object-fit: cover;
-  width: 260px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
-
-  @media screen and (max-width: 1199px) {
-    width: 268px;
-    height: 294px;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 226px;
-    height: 274px;
-  }
 }
 
 .coaches__heading {
@@ -133,11 +119,9 @@
   overflow-y: scroll;
 
   @media screen and (max-width: 1199px) {
-    width: 260px;
   }
 
   @media screen and (max-width: 767px) {
-    width: 226px;
     padding: 65px 33px 48px 50px;
   }
 }
