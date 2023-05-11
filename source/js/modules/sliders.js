@@ -21,30 +21,33 @@ const sliders = [
           spaceBetween: 40,
         },
       },
-    }
+
+      navigation: {
+        nextEl: '.coaches .swiper-button-next',
+        prevEl: '.coaches .swiper-button-prev',
+      },
+    },
   },
   {
     container: document.querySelector('.reviews__swiper'),
     options: {
-      loop: false
-    }
+      loop: false,
+
+      navigation: {
+        nextEl: '.reviews .swiper-button-next',
+        prevEl: '.reviews .swiper-button-prev',
+      },
+    },
   }
-]
+];
 
 const initSliders = () => {
-  sliders.forEach(({ container, options }) => {
+  sliders.forEach(({container, options}) => {
     if (!container) {
       return;
     }
 
-    new Swiper(container, {
-      ...options,
-
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    new Swiper(container, options);
   });
 };
 

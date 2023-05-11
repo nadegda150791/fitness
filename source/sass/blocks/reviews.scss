@@ -1,5 +1,5 @@
 .reviews {
-  padding: 20px 103px 121px;
+  padding: 56px 103px 121px;
   max-width: 1366px;
   margin: auto;
 
@@ -16,6 +16,10 @@
   position: relative;
   max-width: 560px;
   margin: auto;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 566px;
+  }
 }
 
 .reviews__title {
@@ -47,8 +51,6 @@
 }
 
 .reviews__wrapper-index {
-  max-width: 560px;
-  margin: auto;
   padding: 53px 62px 55px;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -56,8 +58,7 @@
   background-color: $color-resolution-blue;
 
   @media screen and (max-width: 1199px) {
-    max-width: 566px;
-    padding: 54px 64px 55px;
+    padding: 53px 64px 57px;
   }
 
   @media screen and (max-width: 767px) {
@@ -113,7 +114,7 @@
 }
 
 .reviews__wrapper-next p {
-  margin: 0;
+  margin: -45px 0 0;
   padding: 0;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
@@ -135,6 +136,10 @@
   left: 0;
   width: 100%;
   height: 40px;
+
+  @media screen and (max-width: 767px) {
+    top: 45%;
+  }
 }
 
 .reviews__button {
@@ -163,8 +168,23 @@
 .reviews__button--next {
   right: -58px;
   transform: rotate(180deg);
+
+  @media screen and (max-width: 767px) {
+    right: -37px;
+  }
 }
 
 .reviews__button--prev {
   left: -58px;
+
+  @media screen and (max-width: 767px) {
+    left: -37px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__svg {
+    width: 10px;
+    height: 19px;
+  }
 }

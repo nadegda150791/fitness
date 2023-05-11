@@ -4,11 +4,11 @@
   margin: auto;
 
   @media screen and (max-width: 1199px) {
-    padding: 82px 45px 35px;
+    padding: 91px 45px 72px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 63px 15px 24px;
+    padding: 76px 15px 54px;
   }
 }
 
@@ -62,7 +62,6 @@
 }
 
 .stocks__wrapper-index {
-  // max-height: 462px;
   padding: 45px;
   color: $color-default-white;
   background-color: $color-torch-red;
@@ -93,7 +92,7 @@
 }
 
 .stocks__wrapper-next p {
-  margin: 13px 0 184px;
+  margin: 13px 0 182px;
   padding: 0;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
@@ -164,6 +163,10 @@
 
   &:last-child {
     margin: 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 0;
   }
 
   @media screen and (max-width: 767px) {

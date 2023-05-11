@@ -242,6 +242,14 @@
   left: 0;
   width: 100%;
   height: 40px;
+
+  @media screen and (max-width: 1199px) {
+    top: 56%;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: 57%;
+  }
 }
 
 .coaches__button {
@@ -270,8 +278,23 @@
 .coaches__button--next {
   right: 45px;
   transform: rotate(180deg);
+
+  @media screen and (max-width: 767px) {
+    right: 11px;
+  }
 }
 
 .coaches__button--prev {
   left: 45px;
+
+  @media screen and (max-width: 767px) {
+    left: 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .coaches__svg {
+    width: 10px;
+    height: 19px;
+  }
 }

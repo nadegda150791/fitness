@@ -39,7 +39,7 @@
 }
 
 .promo__wrapper-index {
-  padding: 81px 77px 85px 78px;
+  padding: 81px 79px 85px 78px;
   background-color: $color-torch-red;
   color: $color-default-white;
 
@@ -156,13 +156,9 @@
   padding: 0;
 
   @media screen and (max-width: 1199px) {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     font-size: 10.7px;
     line-height: 150%;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 34px;
   }
 }
 
