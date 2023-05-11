@@ -56,6 +56,7 @@
   }
 
   @media screen and (max-width: 767px) {
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -96,22 +97,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 33px;
   }
-
-  @media screen and (max-width: 446px) {
-    width: 90%;
-  }
-
-  @media screen and (max-width: 390px) {
-    width: 85%;
-  }
-
-  @media screen and (max-width: 370px) {
-    width: 75%;
-  }
-
-  @media screen and (max-width: 320px) {
-    width: 70%;
-  }
 }
 
 .form__toggle {
@@ -141,38 +126,10 @@
   @media screen and (max-width: 767px) {
     margin-top: 6px;
   }
-
-  @media screen and (max-width: 390px) {
-    width: 85%;
-  }
-
-  @media screen and (max-width: 370px) {
-    width: 75%;
-  }
-
-  @media screen and (max-width: 320px) {
-    width: 70%;
-  }
-
-  @media screen and (max-width: 446px) {
-    width: 90%;
-  }
-
-  @media screen and (max-width: 390px) {
-    width: 85%;
-  }
-
-  @media screen and (max-width: 370px) {
-    width: 75%;
-  }
-
-  @media screen and (max-width: 320px) {
-    width: 71%;
-  }
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 50px $color-sapphire;
+  box-shadow: inset 0 0 0 50px $color-sapphire;
   -webkit-text-fill-color: $color-default-white;
   border-bottom: 1px solid $color-light-slate-grey;
 }

@@ -16,80 +16,27 @@
   }
 }
 
-.season-tickets::after {
+.tabs__controls {
+  position: relative;
+}
+
+.tabs__controls::after {
   position: absolute;
   content: "";
   width: 344px;
   height: 2px;
-  top: 242px;
+  top: 42px;
+  left: 0;
   background: rgba(120, 120, 120, 0.2);
-
-  @media screen and (max-width: 2200px) {
-    left: 41%;
-  }
-
-  @media screen and (max-width: 1650px) {
-    left: 40%;
-  }
-
-  @media screen and (max-width: 1450px) {
-    left: 38%;
-  }
-
-  @media screen and (max-width: 1366px) {
-    left: 37%;
-  }
 
   @media screen and (max-width: 1199px) {
     width: 331px;
-    height: 2px;
-    top: 207px;
-    left: 36%;
-  }
-
-  @media screen and (max-width: 1000px) {
-    left: 34%;
-  }
-
-  @media screen and (max-width: 900px) {
-    left: 32%;
-  }
-
-  @media screen and (max-width: 800px) {
-    left: 30%;
-  }
-
-  @media screen and (max-width: 768px) {
-    left: 28.5%;
+    top: 39px;
   }
 
   @media screen and (max-width: 767px) {
-    top: 159px;
+    top: 36px;
     width: 290px;
-  }
-
-  @media screen and (max-width: 600px) {
-    left: 25%;
-  }
-
-  @media screen and (max-width: 530px) {
-    left: 23%;
-  }
-
-  @media screen and (max-width: 440px) {
-    left: 17%;
-  }
-
-  @media screen and (max-width: 390px) {
-    left: 13%;
-  }
-
-  @media screen and (max-width: 340px) {
-    left: 8%;
-  }
-
-  @media screen and (max-width: 320px) {
-    left: 5.5%;
   }
 }
 
@@ -129,6 +76,8 @@
 
   @media screen and (max-width: 1199px) {
     bottom: -84px;
+    width: 347px;
+    height: 444px;
   }
 
   @media screen and (max-width: 767px) {

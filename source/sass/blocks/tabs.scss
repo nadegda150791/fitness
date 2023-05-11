@@ -81,6 +81,11 @@
 .tabs__item {
   position: relative;
   list-style-type: none;
+  margin: 0;
+  padding: 7px;
+  color: $color-sapphire;
+  background-color: $color-default-white;
+  cursor: pointer;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 40px;
@@ -89,14 +94,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 35px;
   }
-}
-
-.tabs__wrapper {
-  margin: 0;
-  padding: 7px;
-  color: $color-sapphire;
-  background-color: $color-default-white;
-  cursor: pointer;
 }
 
 .tabs__wrapper-index {
@@ -242,6 +239,6 @@
   color: $color-default-white;
 }
 
-.tabs__item:hover .tabs__wrapper {
+.tabs__item:hover {
   background: linear-gradient(130.05deg, #ed0233 8.6%, #003eb7 97.31%);
 }

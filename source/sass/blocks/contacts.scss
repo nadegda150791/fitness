@@ -53,7 +53,7 @@
   gap: 19px 115px;
   min-width: 410px;
 
-  ::after {
+  &::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -66,7 +66,7 @@
   @media screen and (max-width: 1199px) {
     gap: 20px 75px;
 
-    ::after {
+    &::after {
       height: 129px;
       top: 8px;
       left: 48%;
@@ -78,7 +78,7 @@
     flex-direction: column;
     gap: 0;
 
-    ::after {
+    &::after {
       display: none;
     }
   }
@@ -99,7 +99,7 @@
   }
 }
 
-.contacts__item-3 {
+.contacts__item--3 {
   order: 1;
 
   @media screen and (max-width: 767px) {
@@ -107,7 +107,7 @@
   }
 }
 
-.contacts__item-2 {
+.contacts__item--2 {
   order: 2;
 
   @media screen and (max-width: 767px) {
@@ -115,7 +115,7 @@
   }
 }
 
-.contacts__item-4 {
+.contacts__item--4 {
   order: 3;
 
   @media screen and (max-width: 767px) {

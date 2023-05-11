@@ -14,12 +14,12 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/data-tabs.scss";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
@@ -35,13 +35,13 @@
 @import "blocks/social.scss";
 @import "blocks/gym.scss";
 @import "blocks/promo.scss";
-@import "blocks/data-tabs.scss";
 @import "blocks/tabs.scss";
 @import "blocks/season-tickets.scss";
 @import "blocks/coaches.scss";
 @import "blocks/advantages.scss";
 @import "blocks/stocks.scss";
 @import "blocks/reviews.scss";
+@import "blocks/slider-button.scss";
 
 // ---------------------------------
 

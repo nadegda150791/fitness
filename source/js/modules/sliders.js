@@ -40,6 +40,7 @@ const sliders = [
     },
   }
 ];
+window.sliders = [];
 
 const initSliders = () => {
   sliders.forEach(({container, options}) => {
@@ -47,7 +48,7 @@ const initSliders = () => {
       return;
     }
 
-    new Swiper(container, options);
+    window.sliders.push(new window.Swiper(container, options));
   });
 };
 
