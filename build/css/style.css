@@ -2767,6 +2767,12 @@ input:-webkit-autofill {
   margin: 0;
   padding: 10px 0 5px 0;
 }
+.footer__logo-link:hover {
+  opacity: 0.6;
+}
+.footer__logo-link:active {
+  opacity: 0.3;
+}
 @media screen and (max-width: 1199px) {
   .footer__logo-link {
     width: 82px;
@@ -2794,13 +2800,13 @@ input:-webkit-autofill {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 0 31%;
+  margin: 0 0 0 31.5%;
   padding: 0;
   list-style-type: none;
 }
 @media screen and (max-width: 1199px) {
   .footer__list {
-    margin: 0 0 0 20%;
+    margin: 0 0 0 21%;
     max-width: 425px;
   }
 }
@@ -2832,7 +2838,7 @@ input:-webkit-autofill {
 
 .footer__item {
   margin: 0;
-  margin-right: 25px;
+  margin-right: 41px;
   padding: 0;
 }
 .footer__item:last-child {
@@ -2840,7 +2846,7 @@ input:-webkit-autofill {
 }
 @media screen and (max-width: 1199px) {
   .footer__item {
-    margin-right: 15px;
+    margin-right: 31px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2857,6 +2863,12 @@ input:-webkit-autofill {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+.footer__link:hover {
+  opacity: 0.6;
+}
+.footer__link:active {
+  opacity: 0.3;
 }
 @media screen and (max-width: 767px) {
   .footer__link {
@@ -3042,6 +3054,8 @@ input:-webkit-autofill {
 
 .gym__video-wrapper {
   position: relative;
+  width: 364px;
+  height: 228px;
   margin: -113px 0 0 -63px;
 }
 @media screen and (max-width: 1199px) {
@@ -3055,6 +3069,7 @@ input:-webkit-autofill {
   .gym__video-wrapper {
     width: 100%;
     margin-top: 0;
+    padding-top: 52%;
   }
 }
 
@@ -3062,22 +3077,23 @@ input:-webkit-autofill {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
 }
 @media screen and (max-width: 767px) {
   .gym__video-img {
     width: 100%;
-    height: 167px;
+    height: 100%;
   }
 }
 
 .gym__video-cover {
-  position: relative;
-  width: 364px;
-  height: 228px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .gym__video-cover.hidden {
   display: none;
@@ -3085,13 +3101,13 @@ input:-webkit-autofill {
 @media screen and (max-width: 1199px) {
   .gym__video-cover {
     width: 266px;
-    height: 167px;
   }
 }
 @media screen and (max-width: 767px) {
   .gym__video-cover {
     width: 100%;
     margin-top: 0;
+    padding-top: 52%;
   }
 }
 
@@ -3102,6 +3118,8 @@ input:-webkit-autofill {
   height: 228px;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   display: block;
   z-index: 3;
   background-color: #14367a;
@@ -3116,7 +3134,9 @@ input:-webkit-autofill {
 @media screen and (max-width: 767px) {
   .gym__video-cover::before {
     width: 100%;
+    height: 100%;
     margin-top: 0;
+    padding-top: 52%;
   }
 }
 
@@ -3124,6 +3144,8 @@ input:-webkit-autofill {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   border: none;
   z-index: 1;
 }
@@ -3136,12 +3158,17 @@ input:-webkit-autofill {
 @media screen and (max-width: 767px) {
   .gym__video {
     width: 100%;
+    height: 100%;
   }
 }
 
 .gym__video-button {
-  position: relative;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border: none;
   z-index: 10;
   width: 72px;
@@ -3563,7 +3590,7 @@ input:-webkit-autofill {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 40px;
+  gap: 40px;
 }
 @media screen and (max-width: 1199px) {
   .tabs__list {
@@ -3574,6 +3601,7 @@ input:-webkit-autofill {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 0;
   }
 }
 

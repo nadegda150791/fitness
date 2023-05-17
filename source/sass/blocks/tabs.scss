@@ -58,7 +58,6 @@
 }
 
 .tabs__content {
-  // height: 401px;
   margin: 0;
   padding: 0;
 }
@@ -72,11 +71,12 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 40px;
+  gap: 40px;
 
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 }
 
