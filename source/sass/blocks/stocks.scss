@@ -44,6 +44,7 @@
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -52,19 +53,24 @@
   grid-template-columns: 1fr 1fr;
 
   @media screen and (max-width: 1199px) {
-    display: flex;
-    margin: auto auto 30px;
+    grid-template-columns: 1fr 1.43fr;
   }
 
   @media screen and (max-width: 767px) {
+    display: flex;
     flex-direction: column;
   }
 }
 
 .stocks__wrapper-index {
-  padding: 45px;
+  position: relative;
+  padding: 45px 45px 44px;
   color: $color-default-white;
   background-color: $color-torch-red;
+
+  @media screen and (max-width: 1199px) {
+    height: 100%;
+  }
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -92,7 +98,7 @@
 }
 
 .stocks__wrapper-next p {
-  margin: 13px 0 182px;
+  margin: 13px 0;
   padding: 0;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
@@ -104,7 +110,23 @@
   }
 }
 
+.stocks__wrapper-next {
+  margin-bottom: 184px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 97%;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 13%;
+  }
+}
+
 .stocks__link {
+  // position: absolute;
+  // position: relative;
+  // bottom: 45px;
+  // margin-top: 182px;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 14px;
@@ -122,18 +144,22 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .stocks__img {
   object-fit: cover;
-  height: 462px;
+  height: 100%;
 
   @media screen and (max-width: 1199px) {
-    min-width: 399px;
+    min-width: 100%;
   }
 
   @media screen and (max-width: 767px) {
-    height: 299px;
     min-width: 100%;
   }
 }

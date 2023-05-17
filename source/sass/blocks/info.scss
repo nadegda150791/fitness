@@ -1,9 +1,21 @@
 .info {
-  display: flex;
+  background: linear-gradient(90deg, $color-sapphire 0, $color-sapphire 50%, $color-default-white 50%, $color-default-white 100%);
+  border-top: 1px solid $color-light-slate-grey;
+
+  @media screen and (max-width: 1199px) {
+    background: none;
+    border: none;
+  }
+}
+
+.info__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 1366px;
   margin: auto;
 
   @media screen and (max-width: 1199px) {
+    display: flex;
     flex-direction: column;
   }
 }

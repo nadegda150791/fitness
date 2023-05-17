@@ -1,8 +1,11 @@
 .advantages {
+  background-color: $color-ghost-white;
+}
+
+.advantages__wrapper-index {
   max-width: 1366px;
   margin: auto;
   padding: 97px 163px 133px 167px;
-  background-color: $color-ghost-white;
 
   @media screen and (max-width: 1199px) {
     padding: 93px 20px 94px 43px;
