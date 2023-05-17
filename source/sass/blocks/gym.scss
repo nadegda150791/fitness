@@ -127,8 +127,9 @@
   margin: -113px 0 0 -63px;
 
   @media screen and (max-width: 1199px) {
-    width: 266px;
-    height: 167px;
+    width: 39.5%;
+    height: 100%;
+    padding-top: 24.5%;
     margin: -84px auto auto auto;
   }
 
@@ -140,6 +141,7 @@
 }
 
 .gym__video-img {
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -165,7 +167,8 @@
   }
 
   @media screen and (max-width: 1199px) {
-    width: 266px;
+    width: 100%;
+    padding-top: 63%;
   }
 
   @media screen and (max-width: 767px) {
@@ -190,8 +193,9 @@
   opacity: 0.5;
 
   @media screen and (max-width: 1199px) {
-    width: 266px;
-    height: 167px;
+    width: 100%;
+    height: 100%;
+    padding-top: 63%;
   }
 
   @media screen and (max-width: 767px) {
@@ -212,14 +216,14 @@
   z-index: 1;
 
   @media screen and (max-width: 1199px) {
-    width: 266px;
-    height: 167px;
-  }
-
-  @media screen and (max-width: 767px) {
     width: 100%;
     height: 100%;
   }
+
+  // @media screen and (max-width: 767px) {
+  //   width: 100%;
+  //   height: 100%;
+  // }
 }
 
 .gym__video-button {
