@@ -61,7 +61,7 @@ const initSliders = () => {
       }
     };
 
-    const observer = new IntersectionObserver ((entries) => entries.forEach(observeSlide), {
+    const observer = new IntersectionObserver((entries) => entries.forEach(observeSlide), {
       root: container,
     });
     container.querySelectorAll('[data-swiper-slide-index]').forEach((slide) => observer.observe(slide));
