@@ -3,6 +3,7 @@ const sliders = [
     container: document.querySelector('.coaches__swiper'),
     options: {
       loop: true,
+      // loopedSlides: 1,
 
       breakpoints: {
         320: {
@@ -49,6 +50,21 @@ const initSliders = () => {
     }
 
     window.sliders.push(new window.Swiper(container, options));
+    if (!options.loop) {
+      return;
+    }
+    const observeSlide = (entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.visiblity = 'visible';
+      } else {
+        entry.target.style.visiblity = 'hidden';
+      }
+    };
+
+    const observer = new IntersectionObserver ((entries) => entries.forEach(observeSlide), {
+      root: container,
+    });
+    container.querySelectorAll('[data-swiper-slide-index]').forEach((slide) => observer.observe(slide));
   });
 };
 

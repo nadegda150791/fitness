@@ -48,14 +48,17 @@
 
 .reviews__item {
   width: 100%;
+  height: auto;
 }
 
 .reviews__wrapper-index {
   padding: 53px 62px 55px;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  grid-template-rows: 40px 1fr;
   color: $color-default-white;
   background-color: $color-resolution-blue;
+  height: 100%;
 
   @media screen and (max-width: 1199px) {
     padding: 53px 64px 57px;
@@ -83,7 +86,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     width: 68px;
     height: 68px;
     margin: 1px 15px 0;
@@ -114,7 +117,7 @@
 }
 
 .reviews__wrapper-next p {
-  margin: -45px 0 0;
+  margin: 0;
   padding: 0;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
