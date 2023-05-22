@@ -1240,6 +1240,10 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.swiper-slide-duplicate:not(:not(.swiper-slide-duplicate) ~ .swiper-slide-duplicate) {
+  visibility: hidden;
+}
+
 @font-face {
   font-style: normal;
   font-weight: 800;
@@ -3194,6 +3198,7 @@ input:-webkit-autofill {
 }
 
 .coaches__item:hover .coaches__container,
+.coaches__item:focus .coaches__container,
 .coaches__item:focus-within .coaches__container {
   height: 100%;
   width: 100%;
@@ -3202,11 +3207,13 @@ input:-webkit-autofill {
 }
 
 .coaches__item:hover .coaches__container-next,
+.coaches__item:focus .coaches__container-next,
 .coaches__item:focus-within .coaches__container-next {
   display: block;
 }
 
 .coaches__item:hover .coaches__heading,
+.coaches__item:focus .coaches__heading,
 .coaches__item:focus-within .coaches__heading {
   top: 52px;
   z-index: 10;
@@ -4214,6 +4221,7 @@ input:-webkit-autofill {
   }
 
   .coaches__item:active .coaches__heading,
+  .coaches__item:focus .coaches__heading,
   .coaches__item:focus-within .coaches__heading {
     top: 52px;
     z-index: 10;
@@ -4833,11 +4841,13 @@ input:-webkit-autofill {
   }
 
   .coaches__item:hover .coaches__heading,
+  .coaches__item:focus .coaches__heading,
   .coaches__item:focus-within .coaches__heading {
     top: 42px;
   }
 
   .coaches__item:active .coaches__heading,
+  .coaches__item:focus .coaches__heading,
   .coaches__item:focus-within .coaches__heading {
     top: 42px;
   }
