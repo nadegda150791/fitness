@@ -170,7 +170,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 76px 40px 50px 40px;
+  padding: 10px 40px 50px 40px;
   z-index: 1;
 
   @media screen and (max-width: 767px) {
@@ -191,6 +191,7 @@
 .coaches__item:focus-within .coaches__container {
   height: 100%;
   width: 100%;
+  padding: 40px 40px 50px;
   background-color: rgba(16, 38, 84, 0.89);
   overflow-y: scroll;
 }
@@ -204,8 +205,10 @@
 .coaches__item:hover .coaches__heading,
 .coaches__item:focus .coaches__heading,
 .coaches__item:focus-within .coaches__heading {
-  top: 52px;
-  z-index: 10;
+  position: relative;
+  margin: 0 0 0 18%;
+  padding: 0;
+  left: 0;
 
   @media screen and (max-width: 767px) {
     top: 42px;
